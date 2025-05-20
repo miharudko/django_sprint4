@@ -8,6 +8,7 @@ MAX_LENGTH = 30
 
 class BaseModel(models.Model):
     """Абстрактная модель. Добавляет флаг is_published и дату публикации."""
+
     is_published = models.BooleanField(
         default=True,
         verbose_name='Опубликовано',
